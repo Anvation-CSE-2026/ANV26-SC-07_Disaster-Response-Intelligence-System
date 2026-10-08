@@ -72,6 +72,18 @@ The Scenario Simulator (Admin → Scenario Simulator) lets you:
 Every change triggers the full intelligence pipeline:
 risk → prediction → priority → resource optimization → routing → alerts → WebSocket broadcast.
 
+## Vercel Deployment & Architecture Notes
+
+This project is configured as a **Multi-Service Monorepo** for deployment on Vercel via the included `vercel.json`. 
+
+- **Static Frontend:** Vercel automatically builds and serves the React/Vite frontend.
+- **Serverless Backend:** The FastAPI backend is deployed as a Serverless Function.
+
+### Important Notes on the Vercel Environment:
+1. **Read-Only File System:** Vercel functions execute in a read-only environment. To support our local SQLite database on Vercel, the backend automatically detects if it is running in Vercel (`os.environ.get("VERCEL")`) and generates the database inside the temporary `/tmp/` folder.
+2. **Auto-Seeding:** Because Vercel wipes the `/tmp/` folder whenever a function cold-starts, the `app/main.py` lifespan event checks if the database is empty upon startup. If it is, it automatically runs the `seed_data.py` script to instantly reload the simulated hackathon data.
+3. **WebSockets Limitation:** Vercel's serverless functions do not support long-lived persistent WebSocket connections. While the API will function perfectly, real-time push updates via WebSockets will likely drop in the Vercel environment. For full WebSocket support, host the backend on a persistent platform (like Render or Railway).
+
 ## Project Structure
 
 ```
