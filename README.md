@@ -55,10 +55,10 @@ npm install
 npm run dev
 ```
 
-Then open:
-- **Admin Dashboard:** http://localhost:5173/admin
-- **Rescue Team:** http://localhost:5173/rescue
-- **Citizen App:** http://localhost:5173/citizen
+Then open the application in your browser. From the main login page, you can select your role to access:
+- **Admin Dashboard** 
+- **Rescue Team Dashboard**
+- **Citizen App**
 
 ## Demo Scenario (Flood)
 
