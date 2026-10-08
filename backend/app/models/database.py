@@ -2,7 +2,12 @@ import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-DB_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "dris.db")
+# Check if running in Vercel Serverless environment
+if os.environ.get("VERCEL"):
+    DB_FILE = "/tmp/dris.db"
+else:
+    DB_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "dris.db")
+
 SQLALCHEMY_DATABASE_URL = f"sqlite:///{DB_FILE}"
 
 engine = create_engine(

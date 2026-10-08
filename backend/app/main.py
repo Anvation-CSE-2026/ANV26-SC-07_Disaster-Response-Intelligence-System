@@ -26,7 +26,17 @@ async def lifespan(app: FastAPI):
     # Initialize DB on startup
     init_db()
     
-    # Optionally run seed_data if needed, but we rely on manual execution as per instructions
+    if os.environ.get("VERCEL"):
+        from app.seed_data import seed
+        from app.models.database import SessionLocal
+        from app.models.models import Zone
+        db = SessionLocal()
+        try:
+            if not db.query(Zone).first():
+                seed()
+        finally:
+            db.close()
+            
     yield
 
 app = FastAPI(title="DRIS Backend API", lifespan=lifespan)
