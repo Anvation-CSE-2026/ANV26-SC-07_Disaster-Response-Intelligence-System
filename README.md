@@ -9,9 +9,9 @@
 ## 🚀 Live Demo Links (Vercel)
 
 The platform is fully deployed and accessible from anywhere. Choose your role below:
-- 👑 **Admin Command Center:** [https://anv-26-sc-07-disaster-response-inte.vercel.app/admin](https://anv-26-sc-07-disaster-response-inte.vercel.app/admin)
-- 🚁 **Rescue Team Dashboard:** [https://anv-26-sc-07-disaster-response-inte.vercel.app/rescue](https://anv-26-sc-07-disaster-response-inte.vercel.app/rescue)
-- 📱 **Citizen Safety Portal:** [https://anv-26-sc-07-disaster-response-inte.vercel.app/citizen](https://anv-26-sc-07-disaster-response-inte.vercel.app/citizen)
+- 👑 **Admin Command Center:** [https://anv26-sc-07disaster-response-intell.vercel.app/admin](https://anv26-sc-07disaster-response-intell.vercel.app/admin)
+- 🚁 **Rescue Team Dashboard:** [https://anv26-sc-07disaster-response-intell.vercel.app/rescue](https://anv26-sc-07disaster-response-intell.vercel.app/rescue)
+- 📱 **Citizen Safety Portal:** [https://anv26-sc-07disaster-response-intell.vercel.app/citizen](https://anv26-sc-07disaster-response-intell.vercel.app/citizen)
 
 ## Core Intelligence Loop
 
