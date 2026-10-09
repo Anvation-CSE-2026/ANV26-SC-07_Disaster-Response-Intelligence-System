@@ -6,12 +6,10 @@
 
 > ⚠️ **Prototype Notice:** This is a 24-hour hackathon prototype using simulated data. It is NOT intended for real emergency deployment. All data, predictions, and recommendations are for demonstration purposes only.
 
-## 🚀 Live Demo Links (Vercel)
+## 🚀 Live Demo Link (Vercel)
 
-The platform is fully deployed and accessible from anywhere. Choose your role below:
-- 👑 **Admin Command Center:** [https://anv26-sc-07disaster-response-intell.vercel.app/admin](https://anv26-sc-07disaster-response-intell.vercel.app/admin)
-- 🚁 **Rescue Team Dashboard:** [https://anv26-sc-07disaster-response-intell.vercel.app/rescue](https://anv26-sc-07disaster-response-intell.vercel.app/rescue)
-- 📱 **Citizen Safety Portal:** [https://anv26-sc-07disaster-response-intell.vercel.app/citizen](https://anv26-sc-07disaster-response-intell.vercel.app/citizen)
+The platform is fully deployed and accessible from anywhere. Click the link below and select your role (Admin, Rescue Team, or Citizen) from the login screen:
+- 🌐 **Main Application Portal:** [https://anv26-sc-07disaster-response-intell.vercel.app/](https://anv26-sc-07disaster-response-intell.vercel.app/)
 
 ## Core Intelligence Loop
 
